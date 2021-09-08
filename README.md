@@ -40,7 +40,7 @@ Currently, reporting Junit 5 extension is experimental so feel free to report an
 @ExtendWith(ReportingExtension.class)
 class YourTestClass  {
 ```
-The report is a sample document like this:
+The report is a simple document like this:
 ![image](material/tractatus_report_image.png)
 
 ## Contributing
@@ -50,8 +50,8 @@ The Github Packages service has a fairly easy mechanism in spite of the Maven Ce
 
 ## Quick Start
 ### Maven
-Currently, the Maven Central version is not the latest. But you can easily Github Maven Repository to use the latest version.
-As you know, the library could be resolved with the other build tools like Ant, SBT, Gradle, and so on with the proper syntax.
+Currently, the Maven Central does not have the latest version. But you can easily use Github Maven Repository to access the latest version.
+As you know, the library could also be fetched by the other build tools like Ant, SBT, Gradle, and so on with the proper syntax.
 ```
 <dependency>
   <groupId>com.github.mryf323</groupId>
