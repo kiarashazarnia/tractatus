@@ -30,43 +30,23 @@
             
             <tr>
                 <td>
-                    <span>NearFalsePoint</span>
+                    <span>UniqueTruePoint</span>
                 </td>
                 <td>
-                    <span>2</span>
+                    <span>ab</span>
                 </td>
                 <td>
                     <ul>
-                        <li>DNF: (c2 &amp; c3) | (~c2 &amp; c5)</li>
-                        <li>Implicant: c2 &amp; c3</li>
-                        <li>Clause: 3</li>
+                        <li>DNF: ab + acd</li>
+                        <li>Implicant: a(b + cd)</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>2 = true</li>
-                        <li>3 = false</li>
-                        <li>4 = false</li>
-                        <li>5 = false</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span>CACC</span>
-                </td>
-                <td>
-                    <span>2</span>
-                </td>
-                <td>
-                    <ul>
-                        <li>Predicate Value: false</li>
-                        <li>Major Clause: 3</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        
+                        <li>a = true</li>
+                        <li>b = true</li>
+                        <li>c = false</li>
+                        <li>d = true</li>
                     </ul>
                 </td>
             </tr>
@@ -87,6 +67,45 @@
                     <ul>
                         <li>a = true</li>
                         <li>b = true</li>
+                        <li>c = false</li>
+                        <li>d = true</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>ClauseCoverage</span>
+                </td>
+                <td>
+                    <span>ab</span>
+                </td>
+                <td>
+                    <ul>
+                        
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>a = true</li>
+                        <li>b = true</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>ClauseCoverage</span>
+                </td>
+                <td>
+                    <span>acd</span>
+                </td>
+                <td>
+                    <ul>
+                        
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>a = true</li>
                         <li>c = false</li>
                         <li>d = true</li>
                     </ul>

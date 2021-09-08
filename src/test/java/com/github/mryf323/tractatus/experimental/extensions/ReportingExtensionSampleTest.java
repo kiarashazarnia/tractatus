@@ -34,7 +34,39 @@ class ReportingExtensionSampleTest  {
             }
     )
     @Test
-    public void testSampleOne() {
+    public void smpleTestForOneAnnotation() {
+        assertTrue(predicate(0,0,1,0));
+    }
+
+
+    @UniqueTruePoint(
+            predicate = "ab",
+            dnf = "ab + acd",
+            implicant = "a(b + cd)",
+            valuations = {
+                    @Valuation(clause = 'a', valuation = true),
+                    @Valuation(clause = 'b', valuation = true),
+                    @Valuation(clause = 'c', valuation = false),
+                    @Valuation(clause = 'd', valuation = true)
+            }
+    )
+    @ClauseCoverage(
+            predicate = "ab",
+            valuations = {
+                    @Valuation(clause = 'a', valuation = true),
+                    @Valuation(clause = 'b', valuation = true)
+            }
+    )
+    @ClauseCoverage(
+            predicate = "acd",
+            valuations = {
+                    @Valuation(clause = 'a', valuation = true),
+                    @Valuation(clause = 'c', valuation = false),
+                    @Valuation(clause = 'd', valuation = true)
+            }
+    )
+    @Test
+    public void smpleTestWithTwoAnnotations() {
         assertTrue(predicate(0,0,1,0));
     }
 

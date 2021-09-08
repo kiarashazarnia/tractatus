@@ -8,9 +8,7 @@ import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
 import java.io.*;
 import java.lang.annotation.Annotation;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public enum Reporter {
@@ -110,7 +108,42 @@ public enum Reporter {
         );
     }
 
-    public ReportableTR toReportableTestRequirement(Annotation annotation) {
+    public List<ReportableTR> toReportableTestRequirement(Annotation annotation) {
+        if(isATestRequirementContainer(annotation))
+            return containerAnnotationToReportableTestRequirement(annotation);
+        else
+            return Arrays.asList(singleAnnotationToReportableTestRequirement(annotation));
+    }
+
+    List<ReportableTR> containerAnnotationToReportableTestRequirement(Annotation annotation) {
+        if(annotation instanceof UniqueTruePointContainer) {
+            return Arrays.stream(((UniqueTruePointContainer) annotation).value())
+                    .map(this::singleAnnotationToReportableTestRequirement)
+                    .filter(Objects::nonNull)
+                    .collect(Collectors.toList());
+        }
+        if(annotation instanceof NearFalsePointContainer) {
+            return Arrays.stream(((NearFalsePointContainer) annotation).value())
+                    .map(this::singleAnnotationToReportableTestRequirement)
+                    .filter(Objects::nonNull)
+                    .collect(Collectors.toList());
+        }
+        if(annotation instanceof ClauseCoverageContainer) {
+            return Arrays.stream(((ClauseCoverageContainer) annotation).value())
+                    .map(this::singleAnnotationToReportableTestRequirement)
+                    .filter(Objects::nonNull)
+                    .collect(Collectors.toList());
+        }
+        if(annotation instanceof CaccContainer) {
+            return Arrays.stream(((CaccContainer) annotation).value())
+                    .map(this::singleAnnotationToReportableTestRequirement)
+                    .filter(Objects::nonNull)
+                    .collect(Collectors.toList());
+        }
+        return new ArrayList<ReportableTR>();
+    }
+
+    ReportableTR singleAnnotationToReportableTestRequirement(Annotation annotation) {
         if(annotation instanceof CACC) {
             return toReportableTR((CACC) annotation);
         }
@@ -149,5 +182,12 @@ public enum Reporter {
             this.clause = clause;
             this.definition = definition;
         }
+    }
+
+    public boolean isATestRequirementContainer(Annotation annotation) {
+        return annotation instanceof UniqueTruePointContainer ||
+                annotation instanceof NearFalsePointContainer ||
+                annotation instanceof ClauseCoverageContainer ||
+                annotation instanceof CaccContainer;
     }
 }
