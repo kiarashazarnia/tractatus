@@ -2,12 +2,13 @@
 Tractatus is a library for logic test documentation. [Tractatus](https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus) is one of the most complex philosophical books ever written.
 # Documentation
 If you want to use this library you just need to know these annotations.
-* [@ClauseCoverage](https://mryf323.github.io/tractatus/com/github/mryf323/tractatus/ClauseCoverage.html)
-* [@UniqueTruePoint](https://mryf323.github.io/tractatus/com/github/mryf323/tractatus/UniqueTruePoint.html)
-* [@NearFalsePoint](https://mryf323.github.io/tractatus/com/github/mryf323/tractatus/NearFalsePoint.html)
-* [@CACC (Correlated Active Clause Coverage)](https://mryf323.github.io/tractatus/com/github/mryf323/tractatus/CACC.html)
-* [@Valuation](https://mryf323.github.io/tractatus/com/github/mryf323/tractatus/Valuation.html)   
-* [@ClauseDefinition](https://mryf323.github.io/tractatus/com/github/mryf323/tractatus/ClauseDefinition.html)
+
+* [@ClauseCoverage](https://kiarashazarnia.github.io/tractatus/com/github/mryf323/tractatus/ClauseCoverage.html)
+* [@UniqueTruePoint](https://kiarashazarnia.github.io/tractatus/com/github/mryf323/tractatus/UniqueTruePoint.html)
+* [@NearFalsePoint](https://kiarashazarnia.github.io/tractatus/com/github/mryf323/tractatus/NearFalsePoint.html)
+* [@CACC (Correlated Active Clause Coverage)](https://kiarashazarnia.github.io/tractatus/com/github/mryf323/tractatus/CACC.html)
+* [@Valuation](https://kiarashazarnia.github.io/tractatus/com/github/mryf323/tractatus/Valuation.html)
+* [@ClauseDefinition](https://kiarashazarnia.github.io/tractatus/com/github/mryf323/tractatus/ClauseDefinition.html)
 
 ## Reporting
 Simply add the extension to your test classes and see the reports in the `tractatus` directory in your project root.
