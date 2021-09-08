@@ -53,20 +53,23 @@ The Github Packages service has a fairly easy mechanism in spite of the Maven Ce
 Currently, the Maven Central does not have the latest version. But you can easily use Github Maven Repository to access the latest version.
 As you know, the library could also be fetched by the other build tools like Ant, SBT, Gradle, and so on with the proper syntax.
 ```
-<dependency>
-  <groupId>com.github.mryf323</groupId>
-  <artifactId>tractatus</artifactId>
-  <version>LATEST</version>
-</dependency>
+<dependencies>
+    <!-- other dependencies... -->
+    
+    <dependency>
+      <groupId>com.github.mryf323</groupId>
+      <artifactId>tractatus</artifactId>
+      <version>LATEST</version>
+    </dependency>
+</dependencies>
 
 <repositories>
-
-    <!-- your repositories... -->
+    <!-- other repositories... -->
     <repository>
         <id>central</id>
         <url>https://repo1.maven.org/maven2</url>
     </repository>
-    
+
     <repository>
         <id>github-kiarash</id>
         <url>https://maven.pkg.github.com/kiarashazarnia/*</url>
