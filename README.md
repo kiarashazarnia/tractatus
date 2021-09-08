@@ -60,10 +60,13 @@ As you know, the library could also be fetched by the other build tools like Ant
 </dependency>
 
 <repositories>
+
+    <!-- your repositories... -->
     <repository>
         <id>central</id>
         <url>https://repo1.maven.org/maven2</url>
     </repository>
+    
     <repository>
         <id>github-kiarash</id>
         <url>https://maven.pkg.github.com/kiarashazarnia/*</url>
