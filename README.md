@@ -51,28 +51,31 @@ The report is a simple document like this:
 
 ## Contributing
 The project is open-source under the MIT License, so feel free to fork it and make a pull request if you have any ideas.
-Although the deployment process is automated thanks to Github Actions, the merging action is manual, so do not hesitate to deploy it on your own.
-The Github Packages service has a fairly easy mechanism in spite of the Maven Central.
+Although the deployment process is automated thanks to [Github Actions](https://github.com/kiarashazarnia/tractatus/actions), the merging action is manual, so do not hesitate to deploy it on your own fork.
+The Github Packages service has a fairly easy mechanism despite the Maven Central's.
 
 ## Quick Start
 ### Maven
 Currently, the Maven Central does not have the latest version. But you can easily use Github Maven Repository to access the latest version.
 As you know, the library could also be fetched by the other build tools like Ant, SBT, Gradle, and so on with the proper syntax.
 ```
-<dependency>
-  <groupId>com.github.mryf323</groupId>
-  <artifactId>tractatus</artifactId>
-  <version>LATEST</version>
-</dependency>
+<dependencies>
+    <!-- other dependencies... -->
+    
+    <dependency>
+      <groupId>com.github.mryf323</groupId>
+      <artifactId>tractatus</artifactId>
+      <version>LATEST</version>
+    </dependency>
+</dependencies>
 
 <repositories>
-
-    <!-- your repositories... -->
+    <!-- other repositories... -->
     <repository>
         <id>central</id>
         <url>https://repo1.maven.org/maven2</url>
     </repository>
-    
+
     <repository>
         <id>github-kiarash</id>
         <url>https://maven.pkg.github.com/kiarashazarnia/*</url>
