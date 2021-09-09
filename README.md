@@ -45,8 +45,8 @@ The report is a simple document like this:
 
 ## Contributing
 The project is open-source under the MIT License, so feel free to fork it and make a pull request if you have any ideas.
-Although the deployment process is automated thanks to Github Actions, the merging action is manual, so do not hesitate to deploy it on your own.
-The Github Packages service has a fairly easy mechanism in spite of the Maven Central.
+Although the deployment process is automated thanks to [Github Actions](https://github.com/kiarashazarnia/tractatus/actions), the merging action is manual, so do not hesitate to deploy it on your own fork.
+The Github Packages service has a fairly easy mechanism despite the Maven Central's.
 
 ## Quick Start
 ### Maven
