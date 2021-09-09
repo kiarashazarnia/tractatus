@@ -39,7 +39,7 @@ Easily document your test cases like below. For more info see the test sample in
 
 ![itst_book_image](material/itst.jpg)
 
-## Reporting
+### Reporting
 Simply add the extension to your test classes and see the reports in the `tractatus` directory in your project root.
 Currently, reporting Junit 5 extension is experimental so feel free to report any issues. 
 ```
@@ -49,10 +49,6 @@ class YourTestClass  {
 The report is a simple document like this:
 ![image](material/tractatus_report_image.png)
 
-## Contribution
-The project is open-source under the MIT License, so feel free to fork it and make a pull request if you have any ideas.
-Although the deployment process is automated thanks to [Github Actions](https://github.com/kiarashazarnia/tractatus/actions), the merging action is manual, so do not hesitate to deploy it on your own fork.
-The Github Packages service has a fairly easy mechanism despite the Maven Central's.
 
 ## Quick Start
 ### Maven
@@ -85,3 +81,9 @@ As you know, the library could also be fetched by the other build tools like Ant
     </repository>
 </repositories>
 ```
+
+
+## Contribution
+The project is open-source under the MIT License, so feel free to fork it and make a pull request if you have any ideas.
+Although the deployment process is automated thanks to [Github Actions](https://github.com/kiarashazarnia/tractatus/actions), the merging action is manual, so do not hesitate to deploy it on your own fork.
+The Github Packages service has a fairly easy mechanism despite the Maven Central's.
