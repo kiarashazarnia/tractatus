@@ -1,10 +1,13 @@
 # Introduction
 Tractatus is a library for __Logic Based Testing__ documentation and reporting. 
 
-> [Tractatus](https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus) is one of the most complex philosophical books ever written!
+> About the name!
+> The project is named by [Mohammad Reza](https://github.com/mryf323) when he created it. [Tractatus](https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus) is one of the most complex philosophical books ever written!
+
+![tractarus_image](material/tractatus.jpg)
 
 # Documentation
-If you want to use this library you just need to know these annotations.
+If you want to use this library you just need to know these annotations. 
 
 * [@ClauseCoverage](https://kiarashazarnia.github.io/tractatus/com/github/mryf323/tractatus/ClauseCoverage.html)
 * [@UniqueTruePoint](https://kiarashazarnia.github.io/tractatus/com/github/mryf323/tractatus/UniqueTruePoint.html)
@@ -32,6 +35,9 @@ Easily document your test cases like below. For more info see the test sample in
         assertTrue(predicate(0,0,1,0));
     }
 ```
+> The technical terminology is mainly from logic based testing literature used in the book [Introduction to Software Testing](https://www.goodreads.com/en/book/show/2923665-introduction-to-software-testing).
+
+![itst_book_image](material/itst.jpg)
 
 ## Reporting
 Simply add the extension to your test classes and see the reports in the `tractatus` directory in your project root.
