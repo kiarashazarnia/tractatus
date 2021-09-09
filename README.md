@@ -4,7 +4,7 @@ Tractatus is a library for __Logic Based Testing__ documentation and reporting.
 > About the name!
 > The project is named by [Mohammad Reza](https://github.com/mryf323) when he created it. [Tractatus](https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus) is one of the most complex philosophical books ever written!
 
-![tractarus_image](material/tractatus.jpg)
+![tractatus_image](material/tractatus.jpg)
 
 # Documentation
 If you want to use this library you just need to know these annotations. 
@@ -49,7 +49,7 @@ class YourTestClass  {
 The report is a simple document like this:
 ![image](material/tractatus_report_image.png)
 
-## Contributing
+## Contribution
 The project is open-source under the MIT License, so feel free to fork it and make a pull request if you have any ideas.
 Although the deployment process is automated thanks to [Github Actions](https://github.com/kiarashazarnia/tractatus/actions), the merging action is manual, so do not hesitate to deploy it on your own fork.
 The Github Packages service has a fairly easy mechanism despite the Maven Central's.
